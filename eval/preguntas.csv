@@ -1,0 +1,11 @@
+pregunta,fuente_esperada,palabra_clave
+What BLEU score did the Transformer (big model) achieve on WMT 2014 English-to-German?,attention_paper.pdf,28.4
+How does RAG combine parametric and non-parametric memory?,rag_paper.pdf,parametric
+What is the purpose of the scaling factor sqrt(dk) in Scaled Dot-Product Attention?,attention_paper.pdf,softmax
+What are the two RAG model variants proposed in the paper and how do they differ?,rag_paper.pdf,RAG-Token
+"How many attention heads does the base Transformer model use, and what are the key and value dimensions per head?",attention_paper.pdf,64
+How many identical layers are in the Transformer encoder stack?,attention_paper.pdf,N = 6
+How does the Transformer encode token positions?,attention_paper.pdf,sinusoidal
+Which pretrained seq2seq model is used as the RAG generator?,rag_paper.pdf,BART
+What size are the Wikipedia passages used by RAG?,rag_paper.pdf,100
+Which optimizer is used to train the Transformer?,attention_paper.pdf,Adam
