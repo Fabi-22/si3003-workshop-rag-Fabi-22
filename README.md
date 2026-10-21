@@ -60,4 +60,4 @@ El corpus ficticio de Café Nube tiene ocho documentos breves y ocho chunks de 4
 
 ## Archivos adicionales
 
-`04_challenges_starter.ipynb` se conserva como plantilla original del curso; no es evidencia ejecutada ni se reclama su contenido. Los retos seleccionados se implementaron y ejecutaron en 03. El correo de entrega debe enviarse a **jipadillab@eafit.edu.co** desde el correo institucional, con el asunto y contenido preparados en el borrador de entrega.
+`04_challenges_starter.ipynb` se conserva como plantilla original del curso; no es evidencia ejecutada ni se reclama su contenido. Los retos seleccionados se implementaron y ejecutaron en 03; [04_challenges.ipynb](notebooks/04_challenges.ipynb) conserva una copia completa del entorno y esas mismas salidas para facilitar su ejecución independiente. No son mediciones adicionales. El correo de entrega debe enviarse a **jipadillab@eafit.edu.co** desde el correo institucional, con el asunto y contenido preparados en el borrador de entrega.
