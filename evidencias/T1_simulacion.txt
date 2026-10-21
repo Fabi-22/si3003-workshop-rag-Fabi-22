@@ -1,0 +1,3 @@
+capa >= 1: esperado=62500.000000; simulado=62954; diferencia=454.000000
+capa >= 2: esperado=3906.250000; simulado=3894; diferencia=-12.250000
+capa >= 3: esperado=244.140625; simulado=260; diferencia=15.859375

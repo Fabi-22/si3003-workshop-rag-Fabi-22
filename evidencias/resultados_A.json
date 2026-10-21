@@ -1,0 +1,802 @@
+{
+  "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "embedding_model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+  "corpus_chunks": 8,
+  "A2": [
+    {
+      "question": "¿Cuánto cuesta el plan Explorador y qué incluye?",
+      "answer": "El plan Explorador cuesta 82.000 pesos colombianos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA.",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "fidelidad",
+          "title": "Programa de fidelidad Semillas",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "programa",
+          "_id": "3931a0708c7f4969b92de90b03901f0f",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones."
+      ]
+    },
+    {
+      "question": "¿Cuánto vale el envío de un pedido de 90000 pesos en productos a Bogotá?",
+      "answer": "El envío es gratuito, ya que el pedido supera los 80000 pesos en productos.",
+      "sources": [
+        {
+          "source_id": "envios",
+          "title": "Cobertura y tiempos de envío",
+          "chunk_index": 0,
+          "department": "logistica",
+          "type": "procedimiento",
+          "_id": "6593eac512814650bbb87dda95414414",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "fidelidad",
+          "title": "Programa de fidelidad Semillas",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "programa",
+          "_id": "3931a0708c7f4969b92de90b03901f0f",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube realiza envíos a Medellín, Bogotá y Cali. El envío cuesta 8000 pesos por pedido y es gratuito desde 80000 pesos en productos. Los pedidos se despachan dentro de dos días hábiles después del pago. La entrega toma de dos a cuatro días hábiles adicionales. No se realizan envíos internacionales.",
+        "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones.",
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial."
+      ]
+    },
+    {
+      "question": "¿Cuándo debo pedir una pausa para evitar el próximo cobro?",
+      "answer": "Debes solicitar la pausa con al menos 72 horas de anticipación a la fecha de renovación.",
+      "sources": [
+        {
+          "source_id": "pausas",
+          "title": "Pausa y cancelación de suscripciones",
+          "chunk_index": 0,
+          "department": "servicio",
+          "type": "politica",
+          "_id": "b67dd2cd172f435a944fab1892f59add",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "soporte",
+          "title": "Horario y canales de soporte",
+          "chunk_index": 0,
+          "department": "servicio",
+          "type": "procedimiento",
+          "_id": "814c3a1116f64b36808cdc063fe9930b",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "fidelidad",
+          "title": "Programa de fidelidad Semillas",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "programa",
+          "_id": "3931a0708c7f4969b92de90b03901f0f",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "La suscripción de Café Nube se puede pausar durante un máximo de dos meses consecutivos. Para que no se genere el siguiente cobro, la pausa o cancelación debe solicitarse con al menos 72 horas de anticipación a la fecha de renovación. No existe penalidad por cancelar. Un pedido ya despachado no se cancela por este procedimiento.",
+        "El soporte de Café Nube atiende de lunes a viernes de 8:00 a 17:00, excepto festivos de Colombia, mediante el formulario de ayuda de la tienda. El tiempo objetivo de primera respuesta es de un día hábil. Una solicitud de soporte debe incluir el número del pedido; nunca se solicita la contraseña ni datos completos de la tarjeta.",
+        "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones."
+      ]
+    },
+    {
+      "question": "¿Cuántas personas admite el taller y cuánto cuesta por persona?",
+      "answer": "El taller admite ocho participantes y cuesta 60000 pesos por persona.",
+      "sources": [
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "envios",
+          "title": "Cobertura y tiempos de envío",
+          "chunk_index": 0,
+          "department": "logistica",
+          "type": "procedimiento",
+          "_id": "6593eac512814650bbb87dda95414414",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube realiza envíos a Medellín, Bogotá y Cali. El envío cuesta 8000 pesos por pedido y es gratuito desde 80000 pesos en productos. Los pedidos se despachan dentro de dos días hábiles después del pago. La entrega toma de dos a cuatro días hábiles adicionales. No se realizan envíos internacionales."
+      ]
+    },
+    {
+      "question": "¿Cuántas Semillas necesito para un descuento y de cuánto es?",
+      "answer": "Necesitas diez Semillas para obtener un descuento de 15000 pesos en productos.",
+      "sources": [
+        {
+          "source_id": "fidelidad",
+          "title": "Programa de fidelidad Semillas",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "programa",
+          "_id": "3931a0708c7f4969b92de90b03901f0f",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "pausas",
+          "title": "Pausa y cancelación de suscripciones",
+          "chunk_index": 0,
+          "department": "servicio",
+          "type": "politica",
+          "_id": "b67dd2cd172f435a944fab1892f59add",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones.",
+        "La suscripción de Café Nube se puede pausar durante un máximo de dos meses consecutivos. Para que no se genere el siguiente cobro, la pausa o cancelación debe solicitarse con al menos 72 horas de anticipación a la fecha de renovación. No existe penalidad por cancelar. Un pedido ya despachado no se cancela por este procedimiento.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes."
+      ]
+    },
+    {
+      "question": "¿Cuál es el NIT legal de Café Nube?",
+      "answer": "No tengo esa información.",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "almacenamiento",
+          "title": "Conservación y molienda del café",
+          "chunk_index": 0,
+          "department": "producto",
+          "type": "recomendacion",
+          "_id": "df501ef9b98c44959102a1daadfabbfb",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Café Nube recomienda guardar el café en un recipiente hermético, en un lugar fresco y seco, alejado de la luz. No recomienda refrigerarlo. Cada bolsa indica fecha de tueste y lote. El café se ofrece en grano, molienda para filtro o molienda para prensa francesa; la elección debe hacerse antes de pagar el pedido."
+      ]
+    },
+    {
+      "question": "¿Qué tasa de interés cobra Café Nube por financiar una compra?",
+      "answer": "No tengo esa información.",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "pausas",
+          "title": "Pausa y cancelación de suscripciones",
+          "chunk_index": 0,
+          "department": "servicio",
+          "type": "politica",
+          "_id": "b67dd2cd172f435a944fab1892f59add",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "La suscripción de Café Nube se puede pausar durante un máximo de dos meses consecutivos. Para que no se genere el siguiente cobro, la pausa o cancelación debe solicitarse con al menos 72 horas de anticipación a la fecha de renovación. No existe penalidad por cancelar. Un pedido ya despachado no se cancela por este procedimiento.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes."
+      ]
+    }
+  ],
+  "A3_before": [
+    {
+      "question": "¿Cuánto cuesta el plan Explorador y qué incluye?",
+      "answer": "El plan Explorador cuesta 82.000 pesos colombianos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA.",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "fidelidad",
+          "title": "Programa de fidelidad Semillas",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "programa",
+          "_id": "3931a0708c7f4969b92de90b03901f0f",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones."
+      ]
+    },
+    {
+      "question": "¿Cuánto cuesta el servicio?",
+      "answer": "No tengo esa información, ya que el contexto no especifica a qué servicio se refiere (taller, suscripción o envíos).",
+      "sources": [
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "envios",
+          "title": "Cobertura y tiempos de envío",
+          "chunk_index": 0,
+          "department": "logistica",
+          "type": "procedimiento",
+          "_id": "6593eac512814650bbb87dda95414414",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube realiza envíos a Medellín, Bogotá y Cali. El envío cuesta 8000 pesos por pedido y es gratuito desde 80000 pesos en productos. Los pedidos se despachan dentro de dos días hábiles después del pago. La entrega toma de dos a cuatro días hábiles adicionales. No se realizan envíos internacionales."
+      ]
+    },
+    {
+      "question": "¿Cuál es el NIT legal de Café Nube?",
+      "answer": "No tengo esa información.",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "almacenamiento",
+          "title": "Conservación y molienda del café",
+          "chunk_index": 0,
+          "department": "producto",
+          "type": "recomendacion",
+          "_id": "df501ef9b98c44959102a1daadfabbfb",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Café Nube recomienda guardar el café en un recipiente hermético, en un lugar fresco y seco, alejado de la luz. No recomienda refrigerarlo. Cada bolsa indica fecha de tueste y lote. El café se ofrece en grano, molienda para filtro o molienda para prensa francesa; la elección debe hacerse antes de pagar el pedido."
+      ]
+    }
+  ],
+  "A3_after": [
+    {
+      "question": "¿Cuánto cuesta el plan Explorador y qué incluye?",
+      "answer": "El plan Explorador cuesta 82000 pesos colombianos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. [Planes de Café Nube]",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "fidelidad",
+          "title": "Programa de fidelidad Semillas",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "programa",
+          "_id": "3931a0708c7f4969b92de90b03901f0f",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones."
+      ]
+    },
+    {
+      "question": "¿Cuánto cuesta el servicio?",
+      "answer": "El taller de métodos de preparación cuesta 60000 pesos por persona. El plan Origen cuesta 45000 pesos mensuales y el plan Explorador cuesta 82000 pesos mensuales. El envío cuesta 8000 pesos por pedido y es gratuito desde 80000 pesos en productos. [Taller de métodos de preparación] [Planes de Café Nube] [Cobertura y tiempos de envío]",
+      "sources": [
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "envios",
+          "title": "Cobertura y tiempos de envío",
+          "chunk_index": 0,
+          "department": "logistica",
+          "type": "procedimiento",
+          "_id": "6593eac512814650bbb87dda95414414",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube realiza envíos a Medellín, Bogotá y Cali. El envío cuesta 8000 pesos por pedido y es gratuito desde 80000 pesos en productos. Los pedidos se despachan dentro de dos días hábiles después del pago. La entrega toma de dos a cuatro días hábiles adicionales. No se realizan envíos internacionales."
+      ]
+    },
+    {
+      "question": "¿Cuál es el NIT legal de Café Nube?",
+      "answer": "No tengo información suficiente en los documentos para responder.",
+      "sources": [
+        {
+          "source_id": "planes",
+          "title": "Planes de Café Nube",
+          "chunk_index": 0,
+          "department": "ventas",
+          "type": "precios",
+          "_id": "0e21555a8e574d3ea58d61201d284f5a",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "talleres",
+          "title": "Taller de métodos de preparación",
+          "chunk_index": 0,
+          "department": "formacion",
+          "type": "actividad",
+          "_id": "87abc38f824b49428b3c465ba4a814c7",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "almacenamiento",
+          "title": "Conservación y molienda del café",
+          "chunk_index": 0,
+          "department": "producto",
+          "type": "recomendacion",
+          "_id": "df501ef9b98c44959102a1daadfabbfb",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+        "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+        "Café Nube recomienda guardar el café en un recipiente hermético, en un lugar fresco y seco, alejado de la luz. No recomienda refrigerarlo. Cada bolsa indica fecha de tueste y lote. El café se ofrece en grano, molienda para filtro o molienda para prensa francesa; la elección debe hacerse antes de pagar el pedido."
+      ]
+    }
+  ],
+  "prompt_before": "Eres un asistente empresarial. Responde únicamente con información del contexto proporcionado. Si el contexto no contiene la respuesta, indica que no tienes esa información. Responde en español y de forma concisa.",
+  "prompt_after": "Eres un asistente empresarial. Usa únicamente el contexto proporcionado. Cita el título exacto de cada documento que respalda tu respuesta entre corchetes. Si el contexto no alcanza para responder, escribe exactamente: No tengo información suficiente en los documentos para responder. No completes datos con conocimiento externo. Responde en español con un máximo de 3 oraciones.",
+  "A4": [
+    {
+      "question": "¿Cuánto cuesta el plan Explorador y qué incluye?",
+      "scores": [
+        {
+          "title": "Planes de Café Nube",
+          "score": 0.4208160358668655,
+          "chunk_index": 0
+        },
+        {
+          "title": "Taller de métodos de preparación",
+          "score": 0.11113177542364851,
+          "chunk_index": 0
+        },
+        {
+          "title": "Programa de fidelidad Semillas",
+          "score": 0.08833897704972214,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "question": "¿Cuándo debo pedir una pausa para evitar el próximo cobro?",
+      "scores": [
+        {
+          "title": "Pausa y cancelación de suscripciones",
+          "score": 0.39253196949933455,
+          "chunk_index": 0
+        },
+        {
+          "title": "Horario y canales de soporte",
+          "score": 0.16362401060113876,
+          "chunk_index": 0
+        },
+        {
+          "title": "Programa de fidelidad Semillas",
+          "score": 0.15173839912609713,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "question": "¿Cuántas personas admite el taller y cuánto cuesta por persona?",
+      "scores": [
+        {
+          "title": "Taller de métodos de preparación",
+          "score": 0.35531152763747476,
+          "chunk_index": 0
+        },
+        {
+          "title": "Planes de Café Nube",
+          "score": 0.08534637959256748,
+          "chunk_index": 0
+        },
+        {
+          "title": "Cobertura y tiempos de envío",
+          "score": 0.06808837321549768,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "question": "¿Cuál es el NIT legal de Café Nube?",
+      "scores": [
+        {
+          "title": "Planes de Café Nube",
+          "score": 0.39695856509518257,
+          "chunk_index": 0
+        },
+        {
+          "title": "Taller de métodos de preparación",
+          "score": 0.3671303289461907,
+          "chunk_index": 0
+        },
+        {
+          "title": "Conservación y molienda del café",
+          "score": 0.3567198890076766,
+          "chunk_index": 0
+        }
+      ]
+    },
+    {
+      "question": "¿Qué tasa de interés cobra Café Nube por financiar una compra?",
+      "scores": [
+        {
+          "title": "Planes de Café Nube",
+          "score": 0.43715258401873214,
+          "chunk_index": 0
+        },
+        {
+          "title": "Pausa y cancelación de suscripciones",
+          "score": 0.4235809453408853,
+          "chunk_index": 0
+        },
+        {
+          "title": "Taller de métodos de preparación",
+          "score": 0.4189087725763748,
+          "chunk_index": 0
+        }
+      ]
+    }
+  ],
+  "A1": [
+    {
+      "question": "¿Cuál es el precio del plan Enterprise de CloudSync Pro?",
+      "answer": "El plan Enterprise cuesta $49/mes por usuario con compromiso anual.",
+      "sources": [
+        {
+          "source_id": "product_001",
+          "title": "CloudSync Pro — Precios",
+          "chunk_index": 0,
+          "department": "sales",
+          "type": "pricing",
+          "_id": "615c46b7e2c641bd8509a9583eedd3f9",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "finance_001",
+          "title": "Política de reembolsos",
+          "chunk_index": 0,
+          "department": "finance",
+          "type": "policy",
+          "_id": "d6f8c547debf4b388dcec4732031dca4",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "hr_001",
+          "title": "Política de trabajo remoto",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "policy",
+          "_id": "b55360a31af6425f9e8b98fa00269366",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "El plan Enterprise cuesta $49/mes por usuario con compromiso anual. El plan mensual sin compromiso cuesta $59/mes por usuario.",
+        "Los reembolsos mayores a $100 requieren aprobación del supervisor. Una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original.",
+        "Los empleados pueden trabajar de forma remota hasta 3 días por semana, con aprobación del jefe directo."
+      ]
+    },
+    {
+      "question": "¿Cuántos días pueden trabajar remotamente los empleados?",
+      "answer": "Los empleados pueden trabajar de forma remota hasta 3 días por semana, con aprobación del jefe directo.",
+      "sources": [
+        {
+          "source_id": "hr_001",
+          "title": "Política de trabajo remoto",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "policy",
+          "_id": "b55360a31af6425f9e8b98fa00269366",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "hr_002",
+          "title": "Onboarding",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "procedure",
+          "_id": "545ae9514a6d4f82957431932cb0901f",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "finance_001",
+          "title": "Política de reembolsos",
+          "chunk_index": 0,
+          "department": "finance",
+          "type": "policy",
+          "_id": "d6f8c547debf4b388dcec4732031dca4",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Los empleados pueden trabajar de forma remota hasta 3 días por semana, con aprobación del jefe directo.",
+        "Durante la primera semana se completan módulos obligatorios de seguridad, cumplimiento y cultura de la empresa.",
+        "Los reembolsos mayores a $100 requieren aprobación del supervisor. Una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original."
+      ]
+    },
+    {
+      "question": "¿Qué pasa con los reembolsos mayores a $100?",
+      "answer": "Requieren aprobación del supervisor y, una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original.",
+      "sources": [
+        {
+          "source_id": "finance_001",
+          "title": "Política de reembolsos",
+          "chunk_index": 0,
+          "department": "finance",
+          "type": "policy",
+          "_id": "d6f8c547debf4b388dcec4732031dca4",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "product_001",
+          "title": "CloudSync Pro — Precios",
+          "chunk_index": 0,
+          "department": "sales",
+          "type": "pricing",
+          "_id": "615c46b7e2c641bd8509a9583eedd3f9",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "hr_001",
+          "title": "Política de trabajo remoto",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "policy",
+          "_id": "b55360a31af6425f9e8b98fa00269366",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Los reembolsos mayores a $100 requieren aprobación del supervisor. Una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original.",
+        "El plan Enterprise cuesta $49/mes por usuario con compromiso anual. El plan mensual sin compromiso cuesta $59/mes por usuario.",
+        "Los empleados pueden trabajar de forma remota hasta 3 días por semana, con aprobación del jefe directo."
+      ]
+    },
+    {
+      "question": "¿Qué ocurre durante la primera semana de onboarding?",
+      "answer": "Durante la primera semana se completan módulos obligatorios de seguridad, cumplimiento y cultura de la empresa.",
+      "sources": [
+        {
+          "source_id": "hr_002",
+          "title": "Onboarding",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "procedure",
+          "_id": "545ae9514a6d4f82957431932cb0901f",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "hr_001",
+          "title": "Política de trabajo remoto",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "policy",
+          "_id": "b55360a31af6425f9e8b98fa00269366",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "finance_001",
+          "title": "Política de reembolsos",
+          "chunk_index": 0,
+          "department": "finance",
+          "type": "policy",
+          "_id": "d6f8c547debf4b388dcec4732031dca4",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "Durante la primera semana se completan módulos obligatorios de seguridad, cumplimiento y cultura de la empresa.",
+        "Los empleados pueden trabajar de forma remota hasta 3 días por semana, con aprobación del jefe directo.",
+        "Los reembolsos mayores a $100 requieren aprobación del supervisor. Una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original."
+      ]
+    },
+    {
+      "question": "¿Cuál es el NIT legal de CloudSync Pro?",
+      "answer": "No tengo esa información en el contexto proporcionado.",
+      "sources": [
+        {
+          "source_id": "product_001",
+          "title": "CloudSync Pro — Precios",
+          "chunk_index": 0,
+          "department": "sales",
+          "type": "pricing",
+          "_id": "615c46b7e2c641bd8509a9583eedd3f9",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "hr_001",
+          "title": "Política de trabajo remoto",
+          "chunk_index": 0,
+          "department": "hr",
+          "type": "policy",
+          "_id": "b55360a31af6425f9e8b98fa00269366",
+          "_collection_name": "company_docs_gradio"
+        },
+        {
+          "source_id": "finance_001",
+          "title": "Política de reembolsos",
+          "chunk_index": 0,
+          "department": "finance",
+          "type": "policy",
+          "_id": "d6f8c547debf4b388dcec4732031dca4",
+          "_collection_name": "company_docs_gradio"
+        }
+      ],
+      "contexts": [
+        "El plan Enterprise cuesta $49/mes por usuario con compromiso anual. El plan mensual sin compromiso cuesta $59/mes por usuario.",
+        "Los empleados pueden trabajar de forma remota hasta 3 días por semana, con aprobación del jefe directo.",
+        "Los reembolsos mayores a $100 requieren aprobación del supervisor. Una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original."
+      ]
+    }
+  ],
+  "A1_chunks": 4
+}
