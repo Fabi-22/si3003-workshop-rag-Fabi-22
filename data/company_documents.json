@@ -1,0 +1,74 @@
+[
+  {
+    "id": "planes",
+    "title": "Planes de Café Nube",
+    "content": "Café Nube es una empresa ficticia de suscripción de café colombiano. El plan Origen cuesta 45000 pesos colombianos al mes e incluye una bolsa de 340 gramos. El plan Explorador cuesta 82000 pesos mensuales e incluye dos bolsas de 340 gramos de regiones distintas. Los precios incluyen IVA. No existe plan empresarial.",
+    "metadata": {
+      "department": "ventas",
+      "type": "precios"
+    }
+  },
+  {
+    "id": "envios",
+    "title": "Cobertura y tiempos de envío",
+    "content": "Café Nube realiza envíos a Medellín, Bogotá y Cali. El envío cuesta 8000 pesos por pedido y es gratuito desde 80000 pesos en productos. Los pedidos se despachan dentro de dos días hábiles después del pago. La entrega toma de dos a cuatro días hábiles adicionales. No se realizan envíos internacionales.",
+    "metadata": {
+      "department": "logistica",
+      "type": "procedimiento"
+    }
+  },
+  {
+    "id": "devoluciones",
+    "title": "Cambios y devoluciones",
+    "content": "Si una bolsa llega abierta o el pedido es incorrecto, el cliente debe informar a Café Nube dentro de cinco días calendario de la entrega y adjuntar una fotografía del producto y el número del pedido. Se ofrece reposición sin costo o devolución del dinero. El reintegro se procesa en siete días hábiles después de aprobar el caso.",
+    "metadata": {
+      "department": "servicio",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "pausas",
+    "title": "Pausa y cancelación de suscripciones",
+    "content": "La suscripción de Café Nube se puede pausar durante un máximo de dos meses consecutivos. Para que no se genere el siguiente cobro, la pausa o cancelación debe solicitarse con al menos 72 horas de anticipación a la fecha de renovación. No existe penalidad por cancelar. Un pedido ya despachado no se cancela por este procedimiento.",
+    "metadata": {
+      "department": "servicio",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "talleres",
+    "title": "Taller de métodos de preparación",
+    "content": "Café Nube ofrece un taller presencial de métodos de preparación los sábados de 10:00 a 12:00 en su sede ficticia de Medellín. Cada sesión admite ocho participantes y cuesta 60000 pesos por persona. La inscripción se paga por adelantado. Para reprogramar sin costo se requiere avisar al menos 24 horas antes.",
+    "metadata": {
+      "department": "formacion",
+      "type": "actividad"
+    }
+  },
+  {
+    "id": "soporte",
+    "title": "Horario y canales de soporte",
+    "content": "El soporte de Café Nube atiende de lunes a viernes de 8:00 a 17:00, excepto festivos de Colombia, mediante el formulario de ayuda de la tienda. El tiempo objetivo de primera respuesta es de un día hábil. Una solicitud de soporte debe incluir el número del pedido; nunca se solicita la contraseña ni datos completos de la tarjeta.",
+    "metadata": {
+      "department": "servicio",
+      "type": "procedimiento"
+    }
+  },
+  {
+    "id": "almacenamiento",
+    "title": "Conservación y molienda del café",
+    "content": "Café Nube recomienda guardar el café en un recipiente hermético, en un lugar fresco y seco, alejado de la luz. No recomienda refrigerarlo. Cada bolsa indica fecha de tueste y lote. El café se ofrece en grano, molienda para filtro o molienda para prensa francesa; la elección debe hacerse antes de pagar el pedido.",
+    "metadata": {
+      "department": "producto",
+      "type": "recomendacion"
+    }
+  },
+  {
+    "id": "fidelidad",
+    "title": "Programa de fidelidad Semillas",
+    "content": "Por cada 10000 pesos pagados en productos de Café Nube se obtiene una Semilla; el costo del envío no acumula puntos. Diez Semillas se pueden canjear por un descuento de 15000 pesos en productos. Las Semillas vencen seis meses después de su emisión. El descuento no se combina con otras promociones.",
+    "metadata": {
+      "department": "ventas",
+      "type": "programa"
+    }
+  }
+]
