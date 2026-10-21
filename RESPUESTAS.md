@@ -96,6 +96,9 @@ Evidencias: [corpus JSON](data/company_documents.json), [captura](evidencias/A2_
 | ¿Cuántas Semillas necesito para un descuento y de cuánto es? | Necesitas diez Semillas para obtener un descuento de 15000 pesos en productos. | Programa de fidelidad Semillas; Pausa y cancelación de suscripciones; Taller de métodos de preparación | Sí |
 | ¿Cuál es el NIT legal de Café Nube? | No tengo esa información. | Planes de Café Nube; Taller de métodos de preparación; Conservación y molienda del café | Sí: no inventa |
 | ¿Qué tasa de interés cobra Café Nube por financiar una compra? | No tengo esa información. | Planes de Café Nube; Pausa y cancelación de suscripciones; Taller de métodos de preparación | Sí: no inventa |
+| ¿Cuánto cuesta el servicio? | No tengo esa información, ya que el contexto no especifica a qué servicio se refiere (taller, suscripción o envíos). | Taller de métodos de preparación; Planes de Café Nube; Cobertura y tiempos de envío | Abstención prudente ante la ambigüedad; no pide aclaración |
+
+Las primeras siete filas corresponden al barrido A2; la octava incorpora la consulta ambigua registrada en `A3_before` del mismo corpus, índice y prompt inicial. Así, las tres preguntas comparadas en A3 están incluidas en esta tabla; no se presenta esta fila como una nueva ejecución.
 
 Se mantuvo `chunk_size=400` y `chunk_overlap=40`: los documentos son breves y cada política queda completa en un solo fragmento; el resultado real fue **8 chunks**. Reducirlos artificialmente podría separar condiciones como las 72 horas de anticipación de la política de pausas. El archivo se escribe y se carga desde `Path("data/company_documents.json")`, evitando la discrepancia de rutas señalada en la guía.
 

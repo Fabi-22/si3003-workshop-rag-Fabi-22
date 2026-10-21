@@ -5,7 +5,7 @@
 - **GitHub:** Fabi-22
 - **Correo institucional:** fvalenciab@eafit.edu.co
 - **Fecha de ejecución:** 21 de octubre de 2026
-- **Estado:** trabajo y evidencias completos; envío del correo pendiente de confirmación.
+- **Estado:** trabajo y evidencias completos; correo preparado para envío por la estudiante.
 
 ## Entrega y evidencias
 
